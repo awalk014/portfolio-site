@@ -1,42 +1,44 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import headerImage from "../images/minimalizm-monitor-kompyuter.jpg";
 
 class Header extends React.Component {
     render() {
         return (
             <header> 
-            <div class="image_container">
-                <img class="header_image" src="images/minimalizm-monitor-kompyuter.jpg" alt="Logo" />
-                <h2 class="header_quote">One machine can do the work of fifty ordinary men.  
+            <div className="image_container">
+                <img className="header_image" src={headerImage} alt="Logo" />
+                <h2 className="header_quote">One machine can do the work of fifty ordinary men.  
                     No machine can do the work of one extraordinary man. - 
                     Elbert Hubbard
                 </h2>
             </div> 
-            <nav class="navbar">
-                <div class="navbar_container">
-                    <ul class="navbar_menu">
-                        <li class="navbar_item">
-                            <a href="index.html" class="navbar_links">Home</a>
+            <nav className="navbar">
+                <div className="navbar_container">
+                    <ul className="navbar_menu">
+                        <li className="navbar_item">
+                            <Link to="/" className="navbar_links">Home</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="aboutme.html" class="navbar_links">About Me</a>
+                        <li className="navbar_item">
+                            <Link to="/about" className="navbar_links">About Me</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="coursedescription.html" class="navbar_links">Course Description</a>
+                        <li className="navbar_item">
+                            <Link to="/coursedescription.html" className="navbar_links">Course Description</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="coursework.html" class="navbar_links">Samples of Coursework</a>
+                        <li className="navbar_item">
+                            <Link to="/coursework.html" className="navbar_links">Samples of Coursework</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="educationplan.html" class="navbar_links">Student Education Plan</a>
+                        <li className="navbar_item">
+                            <Link to="/educationplan.html" className="navbar_links">Student Education Plan</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="awards.html" class="navbar_links">Awards</a>
+                        <li className="navbar_item">
+                            <Link to="/awards.html" className="navbar_links">Awards</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="evaluation.html" class="navbar_links">Evaluation</a>
+                        <li className="navbar_item">
+                            <Link to="/evaluation.html" className="navbar_links">Evaluation</Link>
                         </li>
-                        <li class="navbar_item">
-                            <a href="contact.html" class="navbar_links">Contact</a>
+                        <li className="navbar_item">
+                            <Link to="/contact.html" className="navbar_links">Contact</Link>
                         </li>
                     </ul>
                 </div>
