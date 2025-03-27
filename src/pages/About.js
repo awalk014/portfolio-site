@@ -5,7 +5,7 @@ class About extends React.Component {
     render() {
         return (
             <main>
-            <div class="left_side">
+            <div className="left_side">
                 <h1>Who Am I?</h1>
                 <p>My name is Benjamin Abram Walker. You can call me Abram.</p>
                 <p>I am a software development student graduating from Wayne Community College in May of 2025.
@@ -29,7 +29,7 @@ class About extends React.Component {
                 <h3><Link to="#">Resume</Link></h3>
                 <h3><Link to="#">LinkedIn Profile</Link></h3>
             </div>
-            <div class="right_side">
+            <div className="right_side">
                 <img src="https://placehold.co/400x600" alt="Picture of Me" />
             </div>
         </main>

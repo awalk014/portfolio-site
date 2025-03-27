@@ -23,7 +23,7 @@ class Header extends React.Component {
                             <Link to="/about" className="navbar_links">About Me</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/coursedescription.html" className="navbar_links">Course Description</Link>
+                            <Link to="/coursedescription" className="navbar_links">Course Description</Link>
                         </li>
                         <li className="navbar_item">
                             <Link to="/coursework.html" className="navbar_links">Samples of Coursework</Link>
