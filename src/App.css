@@ -1,17 +1,17 @@
 body {
-  margin: 0px 20px 20px 20px;
+  margin: 0px auto;
   padding: 20px;
   background-color: #222222;
 }
 
 .navbar {
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 20px 20px 0px;
 }
 
 .navbar_container {
   background-color: #757575;
-  width: 100%;
+
   padding: 10px;
   border-radius: 10px;
   border-color: #acacac;
@@ -44,7 +44,7 @@ body {
 }
 
 main {
-  margin: 20px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
   padding: 20px;
   background-color:#757575;
   border-width: 2px;
@@ -95,8 +95,8 @@ footer {
 }
 
 header {   
-  width: 100%;
-  margin: 0 0;
+  margin: 0px 20px 0px 20px;
+  margin: 0 auto;
 }
 
 .left_side {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import headerImage from "../images/minimalizm-monitor-kompyuter.jpg";
+import '../App.css';
 
 class Header extends React.Component {
     render() {
