@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './coursedescription.css';
+import Awards from './pages/Awards';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/coursedescription" element={<CourseDescription />} />
           <Route path="/courseinfo" element={<CourseInfo />} />
+          <Route path="/awards" element={<Awards />} />
         </Routes>
         <Footer />
       </BrowserRouter>

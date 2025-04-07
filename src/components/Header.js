@@ -27,19 +27,19 @@ class Header extends React.Component {
                             <Link to="/coursedescription" className="navbar_links">Course Description</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/coursework.html" className="navbar_links">Samples of Coursework</Link>
+                            <Link to="/coursework" className="navbar_links">Samples of Coursework</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/educationplan.html" className="navbar_links">Student Education Plan</Link>
+                            <Link to="/educationplan" className="navbar_links">Student Education Plan</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/awards.html" className="navbar_links">Awards</Link>
+                            <Link to="/awards" className="navbar_links">Awards</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/evaluation.html" className="navbar_links">Evaluation</Link>
+                            <Link to="/evaluation" className="navbar_links">Evaluation</Link>
                         </li>
                         <li className="navbar_item">
-                            <Link to="/contact.html" className="navbar_links">Contact</Link>
+                            <Link to="/contact" className="navbar_links">Contact</Link>
                         </li>
                     </ul>
                 </div>
