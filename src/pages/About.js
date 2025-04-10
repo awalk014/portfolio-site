@@ -30,7 +30,7 @@ class About extends React.Component {
                 <h3><Link to="#">LinkedIn Profile</Link></h3>
             </div>
             <div className="right_side">
-                <img src="https://placehold.co/400x600" alt="Picture of Me" />
+                <img src="https://placehold.co/400x600" alt="Smiling handsome software developer" />
             </div>
         </main>
         );
