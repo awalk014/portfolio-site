@@ -5,11 +5,11 @@ import CourseInfo from './pages/CourseInfo';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import './coursedescription.css';
 import Awards from './pages/Awards';
 import Evaluation from './pages/Evaluation';
 import EducationPlan from './pages/EducationPlan';
+import './App.css';
+import './coursedescription.css';
 
 
 function App() {

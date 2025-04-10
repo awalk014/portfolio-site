@@ -5,7 +5,7 @@ class CourseDescription extends React.Component {
     render() {
         return (
             <main>
-                <table class="course_table">
+                <table className="course_table">
                     <caption>Course Description</caption>
                     <tr>
                         <th>Course Number</th>

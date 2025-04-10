@@ -1,6 +1,5 @@
-// c:\Users\abram\Documents\ReactProjects\portfolio-site\src\components\Survey.js
 import React, { useState } from "react";
-import '../Survey.css'; // Ensure this import is present
+import '../Survey.css'; 
 
 const questions = [
   "Have you enjoyed using the website?",
@@ -47,20 +46,20 @@ export default function Survey() {
     <div className="survey-container">
       <h2 className="survey-title">Survey</h2>
 
-      {/* Use className instead of style */}
+      
       <div className="survey-question-area">
-        {/* Use className instead of style */}
+        
         <p className="survey-question-text">{questions[currentQuestionIndex]}</p>
         <input
           type="text"
           value={answers[currentQuestionIndex]}
           onChange={handleInputChange}
-          // Use className instead of style
+          
           className="survey-input"
         />
       </div>
 
-      {/* Use className instead of style */}
+      
       <div className="survey-navigation">
         <button onClick={prevQuestion} disabled={currentQuestionIndex === 0}>
           Previous
@@ -73,12 +72,21 @@ export default function Survey() {
       </div>
 
       {showDialog && (
-        // Use className instead of style
+        
         <div className="survey-dialog-overlay">
-          {/* Use className instead of style */}
+          
           <div className="survey-dialog-content">
             <p>Survey submitted.</p>
-            {/* Removed inline style, handled by .survey-dialog-content button in CSS */}
+            <p>Thank you for your feedback!</p>
+            <p>Your answers:</p>
+            <ul>
+              {answers.map((answer, index) => (
+                <li key={index}>
+                  {questions[index]}: {answer}
+                </li>
+              ))}
+            </ul>
+        
             <button onClick={closeDialog}>Close</button>
           </div>
         </div>
