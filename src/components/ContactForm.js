@@ -23,11 +23,14 @@ const ContactForm = () => {
             });
 
             const result = await response.text();
+            console.log("Raw response:", resultText);
+            console.log("Status code:", response.status);
             setStatus(result);
         } catch (error) {
-            console.error(error);
+            console.error("Fetch error:", error);
             setStatus("Error sending message");
-        }
+          }
+          
     };
 
     return (
