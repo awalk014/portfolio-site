@@ -1,72 +1,59 @@
-// ContactForm.jsx
 import React, { useState } from "react";
+import "../ContactForm.css"; // import the css file
 
-const ContactForm = () => {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-    const [status, setStatus] = useState("");
+function ContactForm() {
+  const [status, setStatus] = useState("");
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus("Sending...");
+    try {
+      const response = await fetch("https://benwalkerbackend.site/send-email.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-        try {
-            const response = await fetch("https://benwalkerbackend.site/send-email.php", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
+      if (response.ok) {
+        setStatus("Message sent!");
+        e.target.reset();
+      } else {
+        setStatus("Error sending message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus("Error sending message.");
+    }
+  };
 
-            const resultText = await response.text();
-            console.log("Raw response:", resultText);
-            console.log("Status code:", response.status);
-            setStatus(resultText);
-        } catch (error) {
-            console.error("Fetch error:", error);
-            setStatus("Error sending message");
-          }
-          
-    };
+  return (
+    <main className="contact-container">
+      <form onSubmit={handleSubmit} className="contact-form">
+        <h2>Contact Me</h2>
 
-    return (
-        <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
-            <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full border p-2"
-            />
-            <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full border p-2"
-            />
-            <textarea
-                name="message"
-                placeholder="Your message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full border p-2"
-            />
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">
-                Send
-            </button>
-            <p>{status}</p>
-        </form>
-    );
-};
+        <label>Name</label>
+        <input type="text" name="name" required />
+
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Message</label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Send</button>
+        <p>{status}</p>
+      </form>
+    </main>
+  );
+}
 
 export default ContactForm;

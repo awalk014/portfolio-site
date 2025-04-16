@@ -1,0 +1,90 @@
+/* c:\Users\abram\Documents\ReactProjects\portfolio-site\src\ContactForm.css */
+/* --- Updated Styles to match App.css theme --- */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Adjusted slightly so it doesn't always force full screen */
+    /* Match body background from App.css */
+    background-color: #222222;
+    padding: 20px 0; /* Add some padding like App.css body */
+  }
+  
+  .contact-form {
+    /* Match main/footer background from App.css */
+    background: #757575;
+    padding: 2rem; /* Keep padding, similar to App.css elements */
+    /* Match main/footer border style/color from App.css */
+    border: 2px solid #acacac;
+    /* Match main/footer border-radius from App.css */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px; /* Slightly wider if desired */
+    /* Removed box-shadow to match flatter theme */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* Default text color inside the form */
+    color: white;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Increased margin slightly */
+    /* Color will inherit from .contact-form */
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    /* Color will inherit from .contact-form */
+  }
+  
+  /* Keep input/textarea standard for usability */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.7rem; /* Slightly increased padding */
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* Keep standard border */
+    border-radius: 4px; /* Standard radius for inputs */
+    background-color: white; /* Ensure background is white */
+    color: black; /* Ensure text is black */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .contact-form textarea {
+    height: 10rem;
+    max-height: 300px;
+    resize: vertical; /* Allow vertical resize */
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 0.7rem; /* Match input padding */
+    /* Match navbar link hover background from App.css */
+    background-color: #FFC300;
+    /* Change text color for contrast on yellow */
+    color: #222222;
+    font-weight: bold; /* Make button text bolder */
+    border: none;
+    /* Match navbar link border-radius */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Add transition */
+  }
+  
+  .contact-form button:hover {
+    /* Darken the yellow slightly on hover */
+    background-color: #e6b000;
+  }
+  
+  /* Status message styling */
+  .contact-form p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    /* Ensure color contrasts with form background */
+    color: #eeeeee; /* Lighter gray/off-white */
+  }
+  
