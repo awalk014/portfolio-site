@@ -22,7 +22,7 @@ const ContactForm = () => {
                 body: JSON.stringify(formData),
             });
 
-            const result = await response.text();
+            const resultText = await response.text();
             console.log("Raw response:", resultText);
             console.log("Status code:", response.status);
             setStatus(result);
