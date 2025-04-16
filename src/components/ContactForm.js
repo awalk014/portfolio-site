@@ -25,7 +25,7 @@ const ContactForm = () => {
             const resultText = await response.text();
             console.log("Raw response:", resultText);
             console.log("Status code:", response.status);
-            setStatus(result);
+            setStatus(resultText);
         } catch (error) {
             console.error("Fetch error:", error);
             setStatus("Error sending message");
