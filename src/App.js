@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Awards from './pages/Awards';
 import Evaluation from './pages/Evaluation';
 import EducationPlan from './pages/EducationPlan';
+import Contact from './pages/Contact';
 import './App.css';
 import './coursedescription.css';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/awards" element={<Awards />} />
           <Route path="/educationplan" element={<EducationPlan />} />
           <Route path="/evaluation" element={<Evaluation />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>
