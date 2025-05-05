@@ -30,7 +30,7 @@ class About extends React.Component {
                             There is a special pride in being a key player in the unseen systems that make the world go round.
                         </p>
                         <h3 className='clickable-link'><Link to="#">Resume</Link></h3>
-                        <h3 className='clickable-link'><Link to="#">LinkedIn Profile</Link></h3>
+                        <h3 className='clickable-link'><a href="https://www.linkedin.com/in/benjamin-walker-b9895120a" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></h3>
                     </div>
                     <div className="right_side">
                         <img src={portraitImage} alt="Smiling handsome software developer" />
