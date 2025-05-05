@@ -1,21 +1,23 @@
 /* c:\Users\abram\Documents\ReactProjects\portfolio-site\src\Survey.css */
 
 .survey-container {
-  width: 400px; /* Max width, adjust as needed */
-  max-width: 90%; /* Make it responsive */
-  margin: 2rem auto; /* Add top/bottom margin */
-  padding: 1.5rem;
-  border: 1px solid #ddd; /* Add a subtle border */
-  border-radius: 8px;
-  background-color: #f9f9f9; /* Light background for the container */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add subtle shadow */
-  color: #333; /* Default text color for the container */
+  /* Match main/footer background from App.css & contact-form */
+  background: #757575;
+  padding: 2rem; /* Match contact-form padding */
+  /* Match main/footer border style/color from App.css & contact-form */
+  border: 5px solid #acacac;
+  /* Match main/footer border-radius from App.css & contact-form */
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* Adjusted max-width, can be same as contact form (450px) if preferred */
+  margin: 2rem auto; /* Keep vertical margin, center horizontally */
+  /* Default text color inside the form */
+  color: white;
 }
 
 .survey-title {
   font-size: 1.8rem; /* Slightly larger */
   font-weight: bold;
-  color: #2c3e50; /* Darker color for title */
   text-align: center;
   margin-bottom: 1.5rem; /* Add space below title */
 }
@@ -24,14 +26,14 @@
   border: 1px solid #ccc;
   padding: 1rem;
   border-radius: 8px;
-  margin-top: 1rem;
-  background-color: #fff; /* White background for question area */
+  margin-bottom: 1.5rem; /* Space below question area */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background for contrast */
 }
 
 .survey-question-text {
   margin-bottom: 0.75rem; /* Slightly more space */
   font-size: 1.1rem; /* Make question text slightly larger */
-  color: #555; /* Slightly lighter text color */
+  /* Color inherits from .survey-container (white) */
 }
 
 .survey-input {
@@ -41,6 +43,8 @@
   border: 1px solid #ccc;
   box-sizing: border-box; /* Important for width: 100% + padding */
   font-size: 1rem;
+  background-color: white; /* Match contact form input background */
+  color: black; /* Match contact form input text color */
 }
 
 .survey-navigation {
@@ -52,23 +56,27 @@
 /* Basic button styling for consistency */
 .survey-navigation button,
 .survey-dialog-content button {
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem; /* Match contact form button padding */
   font-size: 0.95rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #e7e7e7;
-  color: #333;
+  /* Match contact form button border-radius */
+  border-radius: 5px;
+  border: none; /* Remove default border */
+  /* Match contact form button background */
+  background-color: #FFC300;
+  /* Match contact form button text color */
+  color: #222222;
+  font-weight: bold; /* Match contact form button font weight */
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .survey-navigation button:hover,
 .survey-dialog-content button:hover {
-  background-color: #dcdcdc;
+  background-color: #e6b000; /* Match contact form button hover */
 }
 
 .survey-navigation button:disabled {
-  background-color: #f5f5f5;
+  background-color: #cccccc; /* Adjust disabled background */
   color: #aaa;
   cursor: not-allowed;
   border-color: #ddd;
@@ -89,22 +97,25 @@
 }
 
 .survey-dialog-content {
-  background-color: white;
-  padding: 2.5rem; /* More padding */
-  border-radius: 8px;
+  /* Match main form styles */
+  background: #757575;
+  padding: 2rem;
+  border: 5px solid #acacac;
+  border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  color: #333;
+  color: white; /* Match main form text color */
   min-width: 250px; /* Minimum width */
+  max-width: 450px; /* Consistent max width */
 }
 
 .survey-dialog-content p {
     margin-bottom: 1.5rem; /* Space between text and button */
     font-size: 1.1rem;
+    /* Color inherits from .survey-dialog-content (white) */
 }
 
 /* Specific style for close button if needed, otherwise handled by general button style */
 /* .survey-dialog-close-button { */
   /* margin-top: 1rem; */ /* Already handled by p margin-bottom */
 /* } */
-

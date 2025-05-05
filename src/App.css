@@ -119,10 +119,14 @@ header {
 }
 
 .right_side img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  display: block; /* Prevents extra space below the image */
+  max-width: 50%; /* Make image responsive within its container */
+  height: 50%;
+  padding: 15px; /* Space between image and border (matting) */
+  background-color: #f0f0f0; /* Color of the matting */
+  border: 10px solid #6b4f34; /* Outer frame border (adjust color/style) */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 main::after {
@@ -136,7 +140,17 @@ main::after {
   text-align: center;
 }
 
-.main_home {
+.main_home h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.main_home p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main_home h2 {
   text-align: center;
   font-size: 36px;
 }
