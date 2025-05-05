@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import portraitImage from '../images/portrait.png';
+
 
 class About extends React.Component {
     render() {
@@ -31,7 +33,7 @@ class About extends React.Component {
                         <h3 className='clickable-link'><Link to="#">LinkedIn Profile</Link></h3>
                     </div>
                     <div className="right_side">
-                        <img src="https://placehold.co/400x600" alt="Smiling handsome software developer" />
+                        <img src={portraitImage} alt="Smiling handsome software developer" />
                     </div>
                 </div>
                 <div className='reflection'>
