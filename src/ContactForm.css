@@ -7,7 +7,7 @@
     align-items: center;
     min-height: 80vh; /* Adjusted slightly so it doesn't always force full screen */
     /* Match body background from App.css */
-    background-color: #222222;
+    border: none;
     padding: 20px 0; /* Add some padding like App.css body */
   }
   
@@ -16,7 +16,7 @@
     background: #757575;
     padding: 2rem; /* Keep padding, similar to App.css elements */
     /* Match main/footer border style/color from App.css */
-    border: 2px solid #acacac;
+    border: 5px solid #acacac;
     /* Match main/footer border-radius from App.css */
     border-radius: 10px;
     width: 100%;
