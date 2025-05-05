@@ -26,8 +26,8 @@ class About extends React.Component {
                     always derived much satisfaction from working on systems that are not visible to the end user.
                     There is a special pride in being a key player in the unseen systems that make the world go round.
                 </p>
-                <h3><Link to="#">Resume</Link></h3>
-                <h3><Link to="#">LinkedIn Profile</Link></h3>
+                <h3 className='clickable-link'><Link to="#">Resume</Link></h3>
+                <h3 className='clickable-link'><Link to="#">LinkedIn Profile</Link></h3>
             </div>
             <div className="right_side">
                 <img src="https://placehold.co/400x600" alt="Smiling handsome software developer" />

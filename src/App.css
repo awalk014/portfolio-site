@@ -140,6 +140,10 @@ main::after {
   text-align: center;
 }
 
+.left_side h3 {
+  max-width: 80px;
+}
+
 .main_home h1 {
   text-align: center;
   font-size: 48px;
@@ -160,3 +164,81 @@ main::after {
   border-radius: 10px;
 }
 
+/* Courswork.js Styles inlcuding Modal Styles */
+
+/* --- Video Modal Styles --- */
+/* Base style for the clickable links */
+.clickable-link {
+  color: white; /* Make default text color white */
+  background-color: #a0a0a0; /* Add a light gray background */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline since it has a background */
+  padding: 2px 5px; /* Add some padding for the background */
+  border-radius: 5px; /* Match navbar link radius */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition */
+}
+
+.video-modal-overlay {
+  position: fixed; /* Sit on top of the page content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.video-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative; /* Needed for absolute positioning of the close button */
+  text-align: center; /* Center video and text */
+  max-width: 90%; /* Prevent it from being too wide on large screens */
+  max-height: 90%; /* Prevent it from being too tall */
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-modal-content video {
+  max-width: 100%; /* Ensure video scales down */
+  max-height: calc(80vh - 80px); /* Adjust max height considering padding/text */
+  display: block; /* Prevents extra space below video */
+  margin: 0 auto 10px auto; /* Center video and add space below */
+}
+
+/* Style for the image inside the modal */
+.modal-image {
+  max-width: 100%; /* Ensure image scales down horizontally */
+  max-height: calc(80vh - 80px); /* Similar max height as video */
+  display: block; /* Prevents extra space below image */
+  margin: 0 auto 10px auto; /* Center image and add space below */
+}
+
+/* Hover effect for the clickable links - match navbar */
+.clickable-link:hover {
+  background-color: #FFC300; /* Yellow background like navbar */
+  color: #222222; /* Dark text for contrast on yellow */
+  text-decoration: none; /* Optional: remove underline on hover */
+}
+
+/* Style for coursework divs to constrain width and center */
+.div_coursework {
+  max-width: 1100px; /* Adjust this value to match your navbar's content width */
+  width: 90%; /* Use percentage for responsiveness, but capped by max-width */
+  margin: auto; /* Center the div */
+  padding: 15px; /* Add some padding */
+}
