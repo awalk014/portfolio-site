@@ -129,6 +129,19 @@ header {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
+.reflection {
+  width: 100%;      /* Take full width to force stacking if parent is flex row */
+  display: block;   /* Explicitly set block display */
+  clear: both;      /* Clear floats if any were used */
+}
+
+.reflection p {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+
 main::after {
   content: "";
   display: table;

@@ -46,3 +46,16 @@ h1 {
     background-color: #FFC300;
     color: blue;
 }
+
+.course-description {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    background-color: #757575;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #acacac;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
